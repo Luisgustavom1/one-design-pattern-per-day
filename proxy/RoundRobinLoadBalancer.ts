@@ -1,13 +1,13 @@
-import { LoadBalancer, Methods, Headers } from "./LoadBalancer";
-import { Server } from "./Server";
+import { LoadBalancer, Methods, Headers } from "./Server";
+import { WebServer } from "./WebServer";
 
 export class RoundRobinLoadBalancer implements LoadBalancer {
-  private servers: Array<Server> = [];
+  private servers: Array<WebServer> = [];
   private currentServer: number = 0;
 
   constructor(urls: string[]) {
     for (const url of urls) {
-      this.servers.push(new Server(url))
+      this.servers.push(new WebServer(url))
     }
   }
 

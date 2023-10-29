@@ -1,13 +1,13 @@
-import { LoadBalancer, Methods, Headers } from "./LoadBalancer";
-import { Server } from "./Server";
+import { Server, Methods, Headers } from "./Server";
+import { WebServer } from "./WebServer";
 
-export class LeastConnectionLoadBalancer implements LoadBalancer {
-  private servers: Array<Server> = [];
-  private currentServer: Server;
+export class LeastConnectionLoadBalancer implements Server {
+  private servers: Array<WebServer> = [];
+  private currentServer: WebServer;
 
   constructor(urls: string[]) {
     for (const url of urls) {
-      this.servers.push(new Server(url))
+      this.servers.push(new WebServer(url))
     }
 
     this.currentServer = this.servers[0]

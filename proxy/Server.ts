@@ -1,26 +1,9 @@
-import { LoadBalancer, Methods, Headers } from "./LoadBalancer";
+type Methods = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
+type Headers = Record<string, string>;
 
-export class Server implements LoadBalancer {
-  private numberOfConnections: number;
-
-  constructor(
-    readonly url: string
-  ) {
-    this.numberOfConnections = 0;
-  }
-
-  request(method: Methods, headers: Headers) {
-    console.log("Receive the request ", method, headers);
-    this.numberOfConnections++
-  }
-
-  close(): Promise<boolean> {
-    console.log("Closing connection...")
-    this.numberOfConnections--
-    return new Promise(() => true)
-  }
-
-  getNumberOfConnections() {
-    return this.numberOfConnections;
-  }
+interface Server {
+  request(method: Methods, headers: Headers): void
+  close(): Promise<boolean>
 }
+
+export { Server, Methods, Headers }
