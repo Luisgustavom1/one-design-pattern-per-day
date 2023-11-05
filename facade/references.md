@@ -1,1 +1,2 @@
 - [https://refactoring.guru/design-patterns/facade](https://refactoring.guru/design-patterns/facade)
+- [https://domaincentric.net/blog/understanding-gof-facade-design-pattern?format=amp](https://domaincentric.net/blog/understanding-gof-facade-design-pattern?format=amp)
