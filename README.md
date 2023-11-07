@@ -7,3 +7,4 @@ This repository is to save my studies and implementations of some design pattern
 - [Proxy](./proxy)
 - [Mediator](./mediator/)
 - [Facade](./facade)
+- [Strategy](./strategy/)
