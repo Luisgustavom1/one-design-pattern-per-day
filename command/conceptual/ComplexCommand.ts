@@ -6,7 +6,7 @@ import { Receiver } from "./Receiver";
  * called "receivers."
  */
 export class ComplexCommand implements Command {
-  private receiver: Receiver;
+  private readonly receiver: Receiver;
 
   /**
     * Context data, required for launching the receiver's methods.
