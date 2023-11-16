@@ -13,3 +13,4 @@ This repository is to save my studies and implementations of some design pattern
 - [Command](./command/)
 - [State](./state/)
 - [Composite](./composite/)
+- [Chain Of Responsability](./chain-of-responsability/)
