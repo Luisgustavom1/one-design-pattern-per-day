@@ -14,3 +14,6 @@ This repository is to save my studies and implementations of some design pattern
 - [State](./state/)
 - [Composite](./composite/)
 - [Chain Of Responsability](./chain-of-responsability/)
+- [Factory Method](./factoryMethod/)
+- [Abstract Factory](./abstractFactory/)
+- [Adapter](./adapter/)
