@@ -17,3 +17,4 @@ This repository is to save my studies and implementations of some design pattern
 - [Factory Method](./factoryMethod/)
 - [Abstract Factory](./abstractFactory/)
 - [Adapter](./adapter/)
+- [Observer](./observer/)
