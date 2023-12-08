@@ -19,3 +19,4 @@ This repository is to save my studies and implementations of some design pattern
 - [Adapter](./adapter/)
 - [Observer](./observer/)
 - [Singleton](./singleton/)
+- [Bridge](./bridge/)
