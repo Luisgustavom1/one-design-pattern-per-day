@@ -1,5 +1,5 @@
 import { Device } from "../implementations/Device";
-import { Remote } from "./remote";
+import { Remote } from "./Remote";
 
 export class BasicRemote implements Remote {
   constructor (
