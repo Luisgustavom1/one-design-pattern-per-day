@@ -20,3 +20,4 @@ This repository is to save my studies and implementations of some design pattern
 - [Observer](./observer/)
 - [Singleton](./singleton/)
 - [Bridge](./bridge/)
+- [Visitor](./visitor/)
