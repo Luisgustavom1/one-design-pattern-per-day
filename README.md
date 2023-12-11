@@ -1,4 +1,4 @@
-# one-design-pattern-per-day
+# one-design-pattern-per-day 
 
 This repository is to save my studies and implementations of some design patterns
 
