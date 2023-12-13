@@ -32,7 +32,7 @@ export class CarManualBuilder implements Builder {
   setGPSNavigator(gpsNavigator: GPSNavigator): void {
     this.gpsNavigator = gpsNavigator;
   }
-  carResult(): Manual {
+  getResult(): Manual {
     const manualComponents = [
       this.type,
       this.seats,
@@ -42,7 +42,7 @@ export class CarManualBuilder implements Builder {
       this.gpsNavigator,
     ]
 
-    if (manualComponents.some((el) => !el)) {
+    if (manualComponents.some((el) => typeof el === "undefined")) {
       throw new Error("Incomplete manual")
     }
 

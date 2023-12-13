@@ -32,7 +32,7 @@ export class CarBuilder implements Builder {
   setGPSNavigator(gpsNavigator: GPSNavigator): void {
     this.gpsNavigator = gpsNavigator;
   }
-  carResult(): Car {
+  getResult(): Car {
     const carComponents = [
       this.type,
       this.seats,
@@ -42,7 +42,7 @@ export class CarBuilder implements Builder {
       this.gpsNavigator,
     ]
 
-    if (carComponents.some((el) => !el)) {
+    if (carComponents.some((el) => typeof el === "undefined")) {
       throw new Error("Incomplete car")
     }
 
