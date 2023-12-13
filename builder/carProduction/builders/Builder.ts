@@ -1,4 +1,4 @@
-import { CarType } from "../cars/CarType";
+import { CarType } from "../products/CarType";
 import { Engine } from "../components/Engine";
 import { GPSNavigator } from "../components/GPSNavigator";
 import { Transmission } from "../components/Transmission";

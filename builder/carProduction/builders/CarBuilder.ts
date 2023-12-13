@@ -2,8 +2,8 @@ import { Engine } from "../components/Engine";
 import { GPSNavigator } from "../components/GPSNavigator";
 import { Transmission } from "../components/Transmission";
 import { TripComputer } from "../components/TripComputer";
-import { Car } from "../cars/Car";
-import { CarType } from "../cars/CarType";
+import { Car } from "../products/Car";
+import { CarType } from "../products/CarType";
 import { Builder } from "./Builder";
 
 export class CarBuilder implements Builder {
