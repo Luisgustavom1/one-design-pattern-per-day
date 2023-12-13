@@ -21,3 +21,4 @@ This repository is to save my studies and implementations of some design pattern
 - [Singleton](./singleton/)
 - [Bridge](./bridge/)
 - [Visitor](./visitor/)
+- [Builder](./builder/)
