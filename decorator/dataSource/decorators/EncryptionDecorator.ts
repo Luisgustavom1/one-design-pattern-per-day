@@ -9,7 +9,7 @@ export class EncryptionDecorator extends DataSourceDecorator {
 
   writeData(data: string): void {
     console.log(`Encrypting data: ${data}`); // extra behavior
-    super.writeData(data);
+    super.writeData(`Encrypted data: ${data}`);
   }
 
   readData(): string {

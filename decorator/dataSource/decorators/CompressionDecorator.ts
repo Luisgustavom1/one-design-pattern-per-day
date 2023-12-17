@@ -8,7 +8,7 @@ export class CompressionDecorator extends DataSourceDecorator {
 
   writeData(data: string): void {
     console.log(`Compressing data: ${data}`); // extra behavior
-    super.writeData(data);
+    super.writeData(`Compressed data > ${data}`);
   }
 
   readData(): string {
