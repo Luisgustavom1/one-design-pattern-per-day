@@ -6,6 +6,10 @@ import { TreeFactory } from "./TreeFactory";
 export class Forest {
   trees: Tree[] = [];
 
+  countTreeTypes(): number {
+    return TreeFactory.countTreeTypes();
+  }
+
   plantTree(x: number, y: number, name: string, color: string, texture: string): void {
     const type = TreeFactory.getTreeType(name, color, texture);
     const tree = new Tree(x, y, type);

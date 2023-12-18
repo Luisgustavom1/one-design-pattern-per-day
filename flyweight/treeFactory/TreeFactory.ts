@@ -12,4 +12,8 @@ export class TreeFactory {
     }
     return type
   }
+
+  static countTreeTypes (): number {
+    return this.treeTypes.size
+  }
 }

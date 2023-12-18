@@ -1,4 +1,4 @@
 export interface Canvas {
-  fillStyle: string
+  fillStyle?: string
   fillRect(x: number, y: number, width: number, height: number): void
 }
