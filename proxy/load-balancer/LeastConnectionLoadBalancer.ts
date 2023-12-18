@@ -9,8 +9,10 @@ export class LeastConnectionLoadBalancer implements Server {
     for (const url of urls) {
       this.servers.push(new WebServer(url))
     }
+    const initialServer = this.servers[0];
+    if (!initialServer) throw new Error('No servers');
 
-    this.currentServer = this.servers[0]
+    this.currentServer = initialServer
   }
 
   request(method: Methods, headers: Headers) {
