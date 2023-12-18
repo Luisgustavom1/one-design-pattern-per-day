@@ -22,3 +22,4 @@ This repository is to save my studies and implementations of some design pattern
 - [Bridge](./bridge/)
 - [Visitor](./visitor/)
 - [Builder](./builder/)
+- [Decorator](./decorator/)
