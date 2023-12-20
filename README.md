@@ -24,3 +24,4 @@ This repository is to save my studies and implementations of some design pattern
 - [Builder](./builder/)
 - [Decorator](./decorator/)
 - [Prototype](./prototype/)
+- [Iterator](./iterator/)
