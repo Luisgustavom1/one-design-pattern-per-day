@@ -20,6 +20,7 @@ export class Editor {
   }
 
   createSnapshot(): Snapshot {
+    // Memento should be immutable
     return new Snapshot(
       this, 
       this.text, 
